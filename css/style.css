@@ -1,0 +1,103 @@
+:root {
+  --primary-color1: #360167;
+  --primary-color2: #6b0772;
+  --primary-color3: #7c085a;
+  --primary-color4: #af12b1;
+  --primary-color5: #cf268a;
+  --primary-color6: #e65c9c;
+  --primary-color7: #fbbcab;
+  --primary-color8: #ffb4c9;
+  --bg-component: #7c085933;
+  /* spacing */
+  --spacing-xx-smal: 0.25rem;
+  --spacing-x-smal: 0.5rem;
+  --spacing-smal: 0.75rem;
+  --spacing-smal: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-xx-lg: 1.75rem;
+  --spacing-x-lg: 2rem;
+  --spacing-lg: 2.5rem;
+  --spacing-lg: 2.75rem;
+  --spacing-component: 0.5rem;
+  /* font families */
+  --font-primary: gabriela;
+  --font-heading: "serif typerface";
+  --font-body: "sans serif typerface";
+  /* main colors */
+  --success-color: #00ff00;
+  --error-color: #ff0000;
+  --normal-color: #0000ff;
+  --warning-color: #ffff00;
+  /* radius */
+  --border-radius-xx-smal: 0.125rem;
+  --border-radius-x-smal: 0.25rem;
+  --border-radius-smal: 0.375rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xx-lg: 1rem;
+  --border-radius-x-lg: 1.25rem;
+  --border-radius-lg: 1.5rem;
+  --border-radius-rounded: 50%;
+  /* shadows */
+  --shadow-xx-smal: 0 0 0.125rem rgba(0, 0, 0, 0.1);
+  --shadow-x-smal: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  --shadow-smal: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 0 0.75rem rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 0 1rem rgba(0, 0, 0, 0.1);
+  --shadow-xx-lg: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+  --shadow-x-lg: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 0 1.75rem rgba(0, 0, 0, 0.1);
+  --component-shadow: 0 0 1rem #a109737e;
+}
+
+:root:has(#dark:checked) {
+  --bg-1: rgb(24, 24, 24);
+  --bg-2: rgb(36, 36, 36);
+  --bg-3: rgb(48, 48, 48);
+  --bg-4: rgb(59, 59, 59);
+  --bg-5: rgb(71, 71, 71);
+  /* text color */
+  --text-1: #fff;
+  --text-2: #d6d6d6;
+  --text-3: #b0b0b0;
+  --text-4: #a0a0a0;
+  --text-muted: #838383;
+}
+
+:root:has(#light:checked) {
+  --bg-1: #fff;
+  --bg-2: #f8f8f8;
+  --bg-3: #f0f0f0;
+  --bg-4: #e8e8e8;
+  --bg-5: #e0e0e0;
+  /* text color */
+  --text-1: #000;
+  --text-2: #333;
+  --text-3: #666;
+  --text-4: #999;
+  --text-muted: #b7b7b7;
+}
+
+/* global start */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+/* global end */
