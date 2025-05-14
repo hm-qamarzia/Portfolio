@@ -184,19 +184,40 @@ header .header-center {
   width: 100%;
   display: grid;
   text-align: left;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 1rem; 
 }
 .header-pic {
   height: 100%;
   display: flex;
-  align-items: center;
+  transform: rotateY(180deg);
+  align-items: end;
+  justify-content: end;
+  animation: me 5s  2s infinite;
 }
 
 .header-img {
   width: 80%;
   margin-left: 20%;
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-rounded);
+  animation: me 5s  0s infinite;
+}
+@keyframes me {
+  0% {
+    filter: drop-shadow(0 0 10px blueviolet);
+  }
+  25% {
+    filter: drop-shadow(10px 0 20px rgba(156, 0, 153, 0.568));
+  }
+  50% {
+    filter: drop-shadow(0px 10px 5px rgba(119, 234, 36, 0.537));
+  }
+  75% {
+    filter: drop-shadow(10px 10px 25px rgba(226, 43, 101, 0.555));
+  }
+  100% {
+    filter: drop-shadow(0 0 10px blueviolet);
+  }
 }
  .header-heading {
   font-family: var(--font-primary);
@@ -257,96 +278,7 @@ header .header-center {
   5px 5px 9px 3px var(--bg-darkest-violet)
   ;
 }
-.header-bg-cont {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-evenly;
-  filter: blur(30px);
-}
-.hh-1 {
-  width: 10vw;
-  height: 70vh;
-  margin: 10px;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.header-bg-part1 {
-  background: var(--primary-color1);
-}
-.header-bg-part2 {
-  background: var(--primary-color2);
-}
-.header-bg-part3 {
-  background: var(--primary-color3);
-}
-.header-bg-part4 {
-  background: var(--primary-color4);
-}
-@keyframes header-bg {
-  0% {
-    width: 10vw;
-    height: 70vh;
-    margin: 10px;
-    top: 0;
-    left: 0;
-  }
-  50% {
-    width: 20vw;
-    height: 20vh;
-    margin: 0px;
-    top: 20vh;
-    left: 30vw;
-  }
-  75% {
-    width: 20vw;
-    height: 5vh;
-    margin: 50px;
-    top: 0vh;
-    left: 70vw;
-  }
-  100% {
-    width: 10vw;
-    height: 10vh;
-    margin: 50px;
-    top: 0;
-    left: 0;
-  }
-}
-@keyframes header-bg2 {
-  0% {
-    width: 10vw;
-    height: 70vh;
-    margin: 10px;
-    bottom: 0;
-    right: 0;
-  }
-  50% {
-    width: 20vw;
-    height: 20vh;
-    margin: 0px;
-    bottom: 20vh;
-    right: 30vw;
-  }
-  75% {
-    width: 20vw;
-    height: 5vh;
-    margin: 50px;
-    bottom: 0vh;
-    right: 70vw;
-  }
-  100% {
-    width: 10vw;
-    height: 10vh;
-    margin: 50px;
-    bottom: 0;
-    right: 0;
-  }
-}
+
 .particle {
   border: 1px solid rgb(117, 0, 172);
 }
